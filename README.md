@@ -107,6 +107,7 @@ Required environment variables:
 - `lay_summary.baml` - Patient-friendly explanations
 - `formal_response.baml` - Academic and clinical formatting
 - `bullet_point.baml` - Structured information delivery
+- `basic_prompts.baml` - Minimal chat completions for connectivity tests
 
 ### Model Configuration (`baml_src/clients.baml`)
 
@@ -147,6 +148,10 @@ client ClaudeResearch {
 ### Template Management
 - `GET /templates` - List available prompt templates
 - `POST /templates/validate` - Validate custom prompts
+- `GET /health/openai` - Check OpenAI API connectivity
+- `GET /health/anthropic` - Check Anthropic API connectivity
+- `POST /chat/openai` - Basic OpenAI prompt completion
+- `POST /chat/anthropic` - Basic Anthropic prompt completion
 
 ## Prompt Engineering Patterns
 
